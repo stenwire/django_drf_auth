@@ -20,7 +20,7 @@ makemigrations:
 	@pipenv run python manage.py makemigrations
 
 migrate:
-	@python manage.py migrate
+	@pipenv run python manage.py migrate
 
 py-shell:
 	@python manage.py shell
