@@ -16,6 +16,7 @@ pytest-factoryboy = "*"
 pytest-django = "*"
 isort = "*"
 black = "*"
+drf-yasg = "*"
 
 [dev-packages]
 black = "*"
