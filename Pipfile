@@ -12,6 +12,10 @@ djangorestframework = "*"
 djoser = "*"
 install = "*"
 djangorestframework-simplejwt = "*"
+pytest-factoryboy = "*"
+pytest-django = "*"
+isort = "*"
+black = "*"
 
 [dev-packages]
 black = "*"

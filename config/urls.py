@@ -17,6 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.urls.conf import include
+
 from .views import GreetingView, UserDetailsView
 
 urlpatterns = [
@@ -27,7 +28,9 @@ urlpatterns = [
             [
                 path("auth/", include("authme.urls")),
                 path("greet/", GreetingView.as_view(), name="greet"),
-                path("users/me/", UserDetailsView.as_view(), name="user-details"),
+                path(
+                    "users/me/", UserDetailsView.as_view(), name="user-details"
+                ),
             ]
         ),
     ),

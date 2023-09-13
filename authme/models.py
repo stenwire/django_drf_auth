@@ -2,16 +2,14 @@ from django.contrib.auth.models import AbstractUser, BaseUserManager
 from django.contrib.auth.validators import UnicodeUsernameValidator
 from django.db import models
 from django.utils.translation import gettext_lazy as _
+from rest_framework.authtoken.models import Token
+
 from utils.models import TrackObjectStateMixin
 
 
 class CustomUserManager(BaseUserManager):
     def create_user(
-        self,
-        email,
-        password=None,
-        username: str = None,
-        **extra_fields
+        self, email, password=None, username: str = None, **extra_fields
     ):
         if not email:
             raise ValueError("The Email field must be set")
