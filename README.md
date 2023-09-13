@@ -7,7 +7,10 @@
 []        []   []    []     []
 [][][][][]     []     []    []
 ```
-
+### Tools:
+- DRF
+- Makefile
+- Python pipenv
 
 # Setup 🔧
 
@@ -37,6 +40,13 @@ make install
 `make makemigrations`
 `make migrate`
 
+- To run app:
+```shell
+make up
+
+accessible through: http://127.0.0.1:8000/
+```
+
 - Create admin user with:
 > whilst in project directory
 
@@ -47,5 +57,4 @@ Then:
 >>> from authme.models import CustomUser
 
 >>> CustomUser.objects.create_user(email="youremail@example.com",username="johnDoe707", password="strongpassword")
-
 ```
