@@ -1,4 +1,7 @@
-# Token Authentication in DRF
+# 🔐 Token Authentication in DRF
+
+### ♨️API Docs:
+[Go-to swagger docs](http://localhost:8000/swagger/)
 
 ```shell
 [][][][][]     [][][][]     [][][][]
@@ -7,12 +10,12 @@
 []        []   []    []     []
 [][][][][]     []     []    []
 ```
-### Tools:
+### ⚒️ Tools:
 - DRF
 - Makefile
 - Python pipenv
 
-# Setup 🔧
+# ⚙️ Setup
 
 - clone repo
 ```shell
@@ -40,7 +43,7 @@ make install
 `make makemigrations`
 `make migrate`
 
-- To run app:
+# 🏃 To run app:
 ```shell
 make up
 
@@ -58,3 +61,6 @@ Then:
 
 >>> CustomUser.objects.create_user(email="youremail@example.com",username="johnDoe707", password="strongpassword")
 ```
+
+- To run est:
+  `make test`
